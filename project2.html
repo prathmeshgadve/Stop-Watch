@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="project2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="min time">00</div>:
+            <div class="sec time">00</div>:
+            <div class="mili time">00</div>
+        </div>
+        <div class="ring"></div>
+    </div>
+    <div class="control">
+        <div class="reset">
+            <button onclick="resetClick()" class="but but-1 inactive" id="reset-button">Reset</button>
+        </div>
+        <div class="sp">
+            <button onclick="startClock()" class="but but-2" id="start-button">Start</button>
+        </div>
+        <div class="lap">
+            <button onclick="lapClick()" class="but but-3 inactive" id="lap-button">Lap</button>
+        </div>
+    </div>
+    <div class="lapss">
+        <ul class="laps" id="lap-1"></ul>
+    </div>
+
+    <script src="project2.js"></script>
+</body>
+
+</html>
